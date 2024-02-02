@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hero{
+            height: 100vh;
+            width: 100%;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .logo{
+            color: black;
+            font-size: 28px;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;   
+        }
+    nav ul li a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    } 
+    nav ul li a:hover{
+        color:rgb(250, 6, 6); 
+        transition: .3s;  
+    } 
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #4a4949;
+}
+    .box{
+    
+    width: 300px;
+    padding:20px ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 14em;
+    box-shadow: 5px 5px 50px 50px rgba(252, 5, 5, 0.699);
+    animation: animateBg 5s linear infinite;
+}
+    @keyframes animateBg{
+        100%{
+            filter: hue-rotate(360deg);
+        }
+        
+    }
+.box input{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto ;
+    text-align: center;
+    border: 3px solid #0399fd;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text" ]:focus,.box input[type = "password" ]:focus{
+    width: 280px;
+    border-color: #04fb6b;
+} 
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 100%;
+    border: 3px solid #04fb6b;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #04fb6b;
+}
+
+    
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            
+            <h2 class="logo"> WANDERLAND ADVENTURES</h2>
+            <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="domestictrips.html"> DOMESTIC TRIPS</a></li>
+            <li><a href="international.html"> INTERNATIONAL TRIPS</a></li>
+            <li><a href="packages.html"> PACKAGES</a></li>
+        </ul>
+        </nav>
+    </div>
+    <form class="box" action="Hello.html" method="post">
+        <h1>LOGIN</h1>
+        <br>
+        <br>
+        <br>
+        
+        <input type="text" name="" placeholder="Username">
+        <input type="password" name="" placeholder="Password">
+        <input type="submit" name="" value="login">
+    </form>
+    
+</body>
+</html>
